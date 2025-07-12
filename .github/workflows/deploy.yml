@@ -7,6 +7,9 @@ on:
     tags:
       - 'v*'
 
+permissions:
+  contents: write
+
 env:
   PLUGIN_NAME: "TelegramBridge"
   INTERNAL_VERSION: 0.0.1
