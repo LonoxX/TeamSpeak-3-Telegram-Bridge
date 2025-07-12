@@ -42,7 +42,7 @@ jobs:
         with:
           submodules: true
       - name: Download prebuild
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: prebuild
           path: .
@@ -88,7 +88,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Download prebuild
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: prebuild
           path: .
@@ -100,7 +100,7 @@ jobs:
         run: |
           mkdir -p tmp
       - name: Collect artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           path: tmp
       - name: Move artifacts to release
